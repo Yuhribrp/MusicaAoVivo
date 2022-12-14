@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  price: MyString
+  duration: MyString
+  equipment: false
+  event_date: 2022-12-14
+  event_hour: MyString
+  musician: one
+  contractor: one
+
+two:
+  price: MyString
+  duration: MyString
+  equipment: false
+  event_date: 2022-12-14
+  event_hour: MyString
+  musician: two
+  contractor: two
