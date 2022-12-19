@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
+  get 'musicians/index'
   devise_for :contractors
   devise_for :musicians
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  # root to: "profiles#landing"
+  root to: "musicians#index"
 end
