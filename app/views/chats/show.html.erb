@@ -1,0 +1,23 @@
+<div class="container chatroom">
+  <h1>#<%= @chat %></h1>
+
+  <div class="messages">
+    <% @chat.messages.each do |message| %>
+      <div id="message-<%= message.id %>">
+        <% if musician %>
+          <small>
+            <strong><%= message.musician.first_name %></strong>
+            <i><%= message.created_at.strftime("%a %b %e at %l:%M %p") %></i>
+          </small>
+          <p><%= message.content %></p>
+        <% else %>
+          <small>
+          <strong><%= message.musician.first_name %></strong>
+          <i><%= message.created_at.strftime("%a %b %e at %l:%M %p") %></i>
+        </small>
+        <p><%= message.content %></p>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
