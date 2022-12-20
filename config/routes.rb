@@ -13,4 +13,8 @@ Rails.application.routes.draw do
   resources :contractors, only: %i[index show]
 
   resources :offers, only: %i[index show]
+
+  resources :chats, only: :show do
+    resources :messages, only: :create
+  end
 end
