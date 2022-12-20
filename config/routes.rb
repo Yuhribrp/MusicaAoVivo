@@ -6,4 +6,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root to: "musicians#index"
+
+  resources :musicians, only: %i[show]
+
+  resources :contractors, only: %i[index show]
+
+  resourcess :offers, only: %i[index show]
 end
