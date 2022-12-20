@@ -11,5 +11,5 @@ Rails.application.routes.draw do
 
   resources :contractors, only: %i[index show]
 
-  resourcess :offers, only: %i[index show]
+  resources :offers, only: %i[index show]
 end

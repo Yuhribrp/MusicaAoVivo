@@ -8,10 +8,10 @@ class Musician < ApplicationRecord
   belongs_to :profile
   has_many :offers
 
-  validates :first_name, presence: true, lenght: { minimum: 3 }
-  validates :last_name, presence: true, lenght: { minimum: 3 }
+  validates :first_name, presence: true, length: { minimum: 3 }
+  validates :last_name, presence: true, length: { minimum: 3 }
   validates :artistic_name, presence: true
-  validates :artistic_bio, presence: true, lenght: { minimum: 20 }
+  validates :artistic_bio, presence: true, length: { minimum: 20 }
   validates :genre, presence: true
   validates :category, presence: true
   validates :date_of_birth, presence: true
