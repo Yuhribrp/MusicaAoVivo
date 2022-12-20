@@ -7,4 +7,8 @@ class Contractor < ApplicationRecord
   belongs_to :profile
   belongs_to :address
   has_many :offers
+
+  validates :full_name, :category, :phone_number, presence: true
+
+  validates :full_name, format: { with: /\A[a-zA-Z]+/, message: "Use only letters and white space" }
 end
