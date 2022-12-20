@@ -45,6 +45,15 @@ gem "bootsnap", require: false
 # Use Sass to process CSS
 gem "sassc-rails"
 
+# Fontawesome gem
+gem "font-awesome-sass", "~> 6.1"
+
+# Simpleform gem
+gem "simple_form", github: "heartcombo/simple_form"
+
+# Autoprefixer gem
+gem "autoprefixer-rails"
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
