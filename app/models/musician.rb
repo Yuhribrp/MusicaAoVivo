@@ -7,6 +7,7 @@ class Musician < ApplicationRecord
   belongs_to :address
   belongs_to :profile
   has_many :offers
+  has_one_attached :avatar
 
   validates :first_name, presence: true, length: { minimum: 3 }
   validates :last_name, presence: true, length: { minimum: 3 }
