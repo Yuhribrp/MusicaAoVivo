@@ -60,6 +60,9 @@ gem "autoprefixer-rails"
 # Authenticantion gem Devise
 gem 'devise'
 
+# Pundit gem
+gem 'pundit'
+
 # Test
 gem 'rspec'
 
