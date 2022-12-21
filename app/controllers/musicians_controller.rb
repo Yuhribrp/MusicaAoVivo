@@ -10,12 +10,12 @@ class MusiciansController < ApplicationController
 
   private
 
-  def mnusician_params
+  def musician_params
     params.require(:musician).permit(:avatar, :first_name, :last_name, :artistic_name,
        :artistic_bio, :phone_number, :genre, :category, :date_of_birth)
   end
 
-  def set_user
+  def set_musician
     @musician = Musican.find(params[:id])
   end
 end
